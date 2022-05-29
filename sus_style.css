@@ -1,0 +1,26 @@
+.side__menu {
+  display: grid;
+  grid-template-rows: repeat(3, 34px);
+  row-gap: 2px;
+}
+.side__menu__submenu {
+  position: relative;
+  padding: 20px 12px;
+}
+.side__menu .side__menu__submenu:hover ul {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.side__menu .side__menu__submenu ul {
+  opacity: 0;
+  transition: opacity 0.5s;
+  position: absolute;
+  left: 10px;
+  top: 60px;
+  width: max-content;
+  background-color: palegoldenrod;
+  box-shadow: 1px 1px 10px 2px rgb(2, 49, 80);
+}
+.side__menu__submenu ul li {
+  padding: 8px 4px;
+}
